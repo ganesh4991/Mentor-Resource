@@ -11,8 +11,9 @@
         <div class="navbar-header">
             <a href="http://www.mentorresource.com" class="pull-left"><img id="branding" src="logo.png"></a>
         </div>
+        <a href="#">Reason for Mentorship</a>
         <ul class="nav navbar-nav">
-           <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
             <li><a href="#">Overview</a></li>
             <li><a href="#">Student Metrics</a></li>
            <li class="active"><a href="#">Mentor Metrics</a></li>
@@ -22,24 +23,45 @@
     
 
 <ul>
-  <li class="active"><a href="#">Mentors VS Students?</a></li>
-            <li><a href="#">Why mentoring students?</a></li>
-            <li><a href="#">Why NOT mentoring?</a></li>
-            <li><a href="#">More confident?</a></li>
-            <li><a href="#">More confident in alma mater grads?
+  <li class="active"><a href="#">Mentorship Continuation</a></li>
+            <li></li>
+            <li><a href="#">Reason for Not Mentorship</a></li>
+            <li><a href="#">Future Mentoring Confidence</a></li>
+            <li><a href="#">Confidence in Students
 </a></li>
-            <li><a href="#">Enjoying mentoring?
+            <li><a href="#">Mentor Enjoyment
 </a></li>
-            <li><a href="#">Alumni activities number?</a></li>
-            <li><a href="#">Alumni satisfied activities?
+            <li><a href="#">Alumni Activity Involvement</a></li>
+            <li><a href="#">Mentorship Preference
 </a></li>
-			<li><a href="#">Mentoring VS desire of alumni?
+			<li><a href="#">Increased Contribution
 </a></li>
-            <li><a href="#">Mentoring VS hiring likelihood</a></li>
-			<li><a href="#">Mentoring VS recommending likelihood</a></li>
+            <li><a href="#">Hiring Likelihood</a></li>
+			<li><a href="#">Mentor Recommendation</a></li>
 
         </ul>
         </div>
+        
+        <div id="filter">
+    <select id="select-graph">
+        <option selected="selected">Select Graph</option>
+        <option value="student-grade">Mentorship Continuation</option>
+        <option value="mentor-industry">Reason for Mentorship</option>
+    </select>
+    &nbsp;
+    
+    &nbsp;
+    <select id="grade">
+        <option selected="selected">Select School Year</option>
+        <option value="freshman">Freshman</option>
+        <option value="soph">Sophomore</option>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+        <option value="all">All Grades</option>
+    </select>
+    &nbsp;
+    <input type="submit" id="filer-change" class="btn btn-info btn-sm submit-button">
+</div>
 <div id="mentorstudent-count" >
 </div>
 <div id="filter">
