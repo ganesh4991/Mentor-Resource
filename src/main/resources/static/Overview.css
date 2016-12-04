@@ -23,5 +23,10 @@ a:hover {
 }
 
 #mentorstudent-count {
-    margin-bottom: 50px;
+    height:600px;
+    margin-left: 300px;
+    margin-bottom:100px;
+    margin-right:300px;
+    border-style:ridge;
+    border-color:powderblue;
 }
