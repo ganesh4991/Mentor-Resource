@@ -31,7 +31,8 @@ var careerpath_graph = function (grade) {
                     title: 'Distribution'
                 },
                 vAxis: {
-                    title: 'Count'
+                    title: 'Count',
+                    minValue: 0
                 }
             };
 
@@ -61,7 +62,8 @@ var careerpath_graph = function (grade) {
                     title: 'Distribution'
                 },
                 vAxis: {
-                    title: 'Count'
+                    title: 'Count',
+                    minValue: 0
                 }
             };
 

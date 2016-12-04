@@ -31,7 +31,8 @@ var mentor_contin = function (grade) {
                 title: 'Decision'
             },
             vAxis: {
-                title: 'Count'
+                title: 'Count',
+                minValue: 0
             }
         };
 
@@ -65,7 +66,8 @@ var mentor_reason = function () {
                 title: 'Mentor reason for continuation'
             },
             vAxis: {
-                title: 'Count'
+                title: 'Count',
+                minValue: 0
             }
         };
 
