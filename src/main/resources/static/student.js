@@ -2,51 +2,77 @@ $("#filer-change").click(function(){
     var graph = $("#select-graph").val();
     var schoolyear = $("#grade").val();
     if (graph.includes("student")) {
-        careerpath_graph();
+        careerpath_graph(schoolyear);
     } else {
         schoolwork_graph();
     }
 });
 
-var careerpath_graph = function () {
+var careerpath_graph = function (grade) {
     console.log("Careerpath_graph called");
-    google.charts.load('current', {packages: ['corechart', 'bar']});
-    google.charts.setOnLoadCallback(drawBasic);
+    var data = null;
+    var options = null;
+    if (grade.includes("all")) {
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawBasic);
 
-    function drawBasic() {
+        function drawBasic() {
+            data = new google.visualization.DataTable();
+            data.addColumn('string', 'Distribution');
+            data.addColumn('number', 'Count');
+            data.addRows([
+                ['Strongly Agree', 40],
+                ['Strongly Disagree', 35]
+            ]);
 
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Distribution');
-        data.addColumn('number', 'Count');
-		data.addColumn ('string', 'Grade')
-        data.addRows([
-            ['Strongly Agree', 'Freshman' 40],
-            ['Strongly Disagree', 'Freshman' 35],
-			['Strongly Agree', 'Sophomore' 35],
-            ['Strongly Disagree', 'Sophomore' 23],
-			['Strongly Agree', 'Junior' 54],
-            ['Strongly Disagree', 'Junior' 45],
-			['Strongly Agree', 'Senior' 45],
-            ['Strongly Disagree', 'Senior' 35],
-			
-            
-        ]);
+            options = {
+                title: 'Career Path Knowledge Improvement - All',
+                hAxis: {
+                    title: 'Distribution'
+                },
+                vAxis: {
+                    title: 'Count'
+                }
+            };
 
-        var options = {
-            title: 'Career Path Knowledge Improvement',
-            hAxis: {
-                title: 'Distribution'
-            },
-            vAxis: {
-                title: 'Count'
-            }
-        };
+
+            var chart = new google.visualization.ColumnChart(
+                document.getElementById('mentorstudent-count'));
+
+            chart.draw(data, options);
+
+        }
+    } else if (grade.includes("fresh")) {
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+            data = new google.visualization.DataTable();
+            data.addColumn('string', 'Distribution');
+            data.addColumn('number', 'Count');
+            data.addRows([
+                ['Strongly Agree', 10],
+                ['Strongly Disagree', 8]
+            ]);
+
+            options = {
+                title: 'Career Path Knowledge Improvement - Freshman',
+                hAxis: {
+                    title: 'Distribution'
+                },
+                vAxis: {
+                    title: 'Count'
+                }
+            };
+
+        }
 
         var chart = new google.visualization.ColumnChart(
             document.getElementById('mentorstudent-count'));
 
         chart.draw(data, options);
     }
+
 }
 
 
@@ -62,14 +88,8 @@ var schoolwork_graph = function () {
         data.addColumn('number', 'Count');
 		data.addColumn ('string', 'Grade')
         data.addRows([
-            ['Strongly Agree', 'Freshman' 40],
-            ['Strongly Disagree', 'Freshman' 35],
-			['Strongly Agree', 'Sophomore' 35],
-            ['Strongly Disagree', 'Sophomore' 23],
-			['Strongly Agree', 'Junior' 54],
-            ['Strongly Disagree', 'Junior' 45],
-			['Strongly Agree', 'Senior' 45],
-            ['Strongly Disagree', 'Senior' 35],
+            ['Strongly Agree', 40],
+            ['Strongly Disagree', 35],
         ]);
 
         var options = {
