@@ -77,3 +77,5 @@ var mentor_reason = function () {
         chart.draw(data, options);
     }
 }
+
+mentor_contin('all');

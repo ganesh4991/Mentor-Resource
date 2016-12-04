@@ -78,3 +78,5 @@ var mentor_graph = function () {
         chart.draw(data, options);
     }
 }
+
+student_graph();

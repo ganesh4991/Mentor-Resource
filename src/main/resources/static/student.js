@@ -88,10 +88,9 @@ var schoolwork_graph = function () {
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Distribution');
         data.addColumn('number', 'Count');
-		data.addColumn ('string', 'Grade')
         data.addRows([
             ['Strongly Agree', 40],
-            ['Strongly Disagree', 35],
+            ['Strongly Disagree', 35]
         ]);
 
         var options = {
@@ -110,3 +109,5 @@ var schoolwork_graph = function () {
         chart.draw(data, options);
     }
 }
+
+schoolwork_graph();
