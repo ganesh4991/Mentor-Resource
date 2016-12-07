@@ -74,7 +74,7 @@ var mentor_graph = function () {
             }
         };
 
-        var chart = new google.visualization.ColumnChart(
+        var chart = new google.visualization.PieChart(
             document.getElementById('mentorstudent-count'));
 
         chart.draw(data, options);
