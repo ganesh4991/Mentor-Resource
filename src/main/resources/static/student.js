@@ -34,9 +34,7 @@ var careerpath_graph = function (grade) {
                 vAxis: {
                     title: 'Count',
                     minValue: 0
-                },
-                colors : ['#AAAAAA']
-
+                }
             };
 
 
@@ -104,7 +102,8 @@ var schoolwork_graph = function () {
                 title: 'Distribution'
             },
             vAxis: {
-                title: 'Count'
+                title: 'Count',
+                minValue: 0
             }
         };
 
