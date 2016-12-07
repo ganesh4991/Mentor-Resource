@@ -8,6 +8,7 @@
     width: 400px;
     height: 550px;
 	background-color:white;
+    opacity: 0.95;
 }
 
 #logo {
@@ -22,10 +23,12 @@
 
 
 body{
-    background-image:url('img-back.png');
-    background-size: cover;
+    background-image: url('img-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 	}
 
 .input-box {
-	 width: 50%;
+    width: 50%;
 }

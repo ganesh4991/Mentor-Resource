@@ -11,7 +11,9 @@
 
 body {
     background-image: url('img-back.png');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #form {
@@ -23,6 +25,7 @@ body {
     height: 500px;
     background-color:white;
     text-align: center;
+    opacity: 0.95;
 }
 
 .input-box {
