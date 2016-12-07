@@ -28,6 +28,7 @@ var student_graph = function () {
 
         var options = {
             title: 'Student Grade Count',
+            titleFontSize:15,
             hAxis: {
                 title: 'Grade'
             },
@@ -64,6 +65,7 @@ var mentor_graph = function () {
 
         var options = {
             title: 'Mentor Industry Count',
+            titleFontSize:15,
             hAxis: {
                 title: 'Industry'
             },

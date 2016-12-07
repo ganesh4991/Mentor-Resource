@@ -27,13 +27,16 @@ var careerpath_graph = function (grade) {
 
             options = {
                 title: 'Career Path Knowledge Improvement - All',
+                titleFontSize:15,
                 hAxis: {
                     title: 'Distribution'
                 },
                 vAxis: {
                     title: 'Count',
                     minValue: 0
-                }
+                },
+                colors : ['#AAAAAA']
+
             };
 
 
@@ -58,6 +61,7 @@ var careerpath_graph = function (grade) {
 
             options = {
                 title: 'Career Path Knowledge Improvement - Freshman',
+                titleFontSize:15,
                 hAxis: {
                     title: 'Distribution'
                 },
@@ -95,6 +99,7 @@ var schoolwork_graph = function () {
 
         var options = {
             title: 'School Work Relevance Improvement',
+            titleFontSize:15,
             hAxis: {
                 title: 'Distribution'
             },

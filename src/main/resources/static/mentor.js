@@ -27,6 +27,7 @@ var mentor_contin = function (grade) {
 
         var options = {
             title: 'Mentor Continuation Count',
+            titleFontSize:15,
             hAxis: {
                 title: 'Decision'
             },
@@ -62,6 +63,7 @@ var mentor_reason = function () {
 
         var options = {
             title: 'Mentor Interest for Continuation Count',
+            titleFontSize:15,
             hAxis: {
                 title: 'Mentor reason for continuation'
             },

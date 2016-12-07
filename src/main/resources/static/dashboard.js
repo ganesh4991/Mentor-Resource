@@ -36,20 +36,18 @@ var drawBackgroundColor =function () {
 
     var options = {
         title:"Mentor Student Count",
-        titleFontSize:20,
+        titleFontSize:15,
         hAxis: {
             title: 'Month'
         },
         vAxis: {
             title: 'Mentor Count'
         },
-        width : 900,
-        height : 600,
         backgroundColor: {
             stroke: '#42b9f4',
             strokeWidth: 3
         },
-        colors : ['#111111']
+        colors : ['#AAAAAA']
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('mentorstudent-count'));
