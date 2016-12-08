@@ -20,15 +20,15 @@ var drawBackgroundColor =function () {
 
     if ($('#year').val()=='2015') {
         rows = [
-            ['Jan', 10],  ['Feb', 23],  ['Mar', 17],  ['April', 18],  ['May', 9],
-            ['June', 11],  ['July', 27],  ['Aug', 33],  ['Sep', 40],  ['Oct', 32], ['Nov', 35],
-            ['Dec', 30]
+            ['Jan', 10],  ['Feb', 15],  ['Mar', 17],  ['April', 21],  ['May', 25],
+            ['June', 27],  ['July', 30],  ['Aug', 33],  ['Sep', 37],  ['Oct', 39], ['Nov', 42],
+            ['Dec', 45]
         ]
     } else {
         rows = [
-            ['Jan', 5],  ['Feb', 15],  ['Mar', 17],  ['April', 12],  ['May', 9],
-            ['June', 15],  ['July', 20],  ['Aug', 13],  ['Sep', 30],  ['Oct', 35], ['Nov', 28],
-            ['Dec', 20]
+            ['Jan', 5],  ['Feb', 8],  ['Mar', 12],  ['April', 15],  ['May', 19],
+            ['June', 26],  ['July', 31],  ['Aug', 34],  ['Sep', 39],  ['Oct', 42], ['Nov', 48],
+            ['Dec', 55]
         ]
     }
 
@@ -46,8 +46,7 @@ var drawBackgroundColor =function () {
         backgroundColor: {
             stroke: '#42b9f4',
             strokeWidth: 3
-        },
-        colors : ['#AAAAAA']
+        }
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('mentorstudent-count'));

@@ -92,7 +92,10 @@ var schoolwork_graph = function () {
         data.addColumn('number', 'Count');
         data.addRows([
             ['Strongly Agree', 40],
-            ['Strongly Disagree', 35]
+            ['Agree', 30],
+            ['No Opinion', 15],
+            ['Disagree', 23],
+            ['Strongly Disagree', 12]
         ]);
 
         var options = {
